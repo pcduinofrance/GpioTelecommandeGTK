@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <gtk/gtk.h>
 #include "callback.h"
+
 void activate (GtkApplication *app, gpointer user_data)         
 {
 	GtkWidget *window;
