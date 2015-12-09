@@ -1,7 +1,8 @@
-/*Fonction de callback pour le switch*/
-// -----------------------------------------------------------------------
 #include <stdlib.h>
 #include <gtk/gtk.h>
+// -----------------------------------------------------------------------
+/*Fonction de callback pour le switch*/
+// -----------------------------------------------------------------------
 
 
 void activate_cb0 (GObject *switcher, GParamSpec *pspec, gpointer user_data)            
@@ -11,6 +12,7 @@ void activate_cb0 (GObject *switcher, GParamSpec *pspec, gpointer user_data)
 	if(gtk_switch_get_active (GTK_SWITCH (switcher)))// Passage a 1
 
 		{
+		
 
 			FILE* gpio = NULL;
 			gpio = fopen("/sys/devices/virtual/misc/gpio/pin/gpio0", "w");
